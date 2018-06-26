@@ -1,2 +1,14 @@
 Hello Git:wnijsdjfbsdbfs:
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+class Hello(){
+
+   public static void main(String[]args){
+
+      System.out.println("大家好我叫李财旺，我好色，好扣屁眼哈哈哈");
+
+   }
+
+}
+
+i
+A`
