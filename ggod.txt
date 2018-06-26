@@ -5,6 +5,7 @@ class Hello(){
    public static void main(String[]args){
 
       System.out.println("大家好我叫李财旺，我好色，好扣屁眼哈哈哈");
+      System.out.println("大家好我叫周鹏展，小名叫周几把，我傻逼我快乐哈哈哈!!!!");
 
    }
 
