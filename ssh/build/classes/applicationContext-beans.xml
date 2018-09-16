@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="empdao" class="com.gaoruanliuban.ssh.DAO.EmployeeDao">
+      <property name="factory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="depardao" class="com.gaoruanliuban.ssh.DAO.DeparmentDao">
+       <property name="factory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="empservlets" class="com.gaoruanliuban.ssh.servlets.EmployeeServlet">
+       <property name="dao" ref="empdao"></property>
+    </bean>
+    <bean  id="deparservlet" class="com.gaoruanliuban.ssh.servlets.DeparmentServlets">
+       <property name="dao" ref="depardao"></property>
+     </bean>
+    <bean  id="employeeAction" class="com.gaoruanliuban.ssh.Action.EmployeeAction" scope="prototype">
+        <property name="employeeServlet" ref="empservlets"></property>
+        <property name="deparmentServlets" ref="deparservlet"></property>
+    </bean>
+</beans>
